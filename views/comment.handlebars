@@ -1,0 +1,19 @@
+{{#each postId.comment}}
+{{> comments}}
+{{/each}}
+<div class="row"><button id="addComment" class="button is-info"> Add your own Comment</button> </div>
+<div class="row">
+    <form id="newIdForm" hidden>
+        <div class="form-group">
+            <label for="comment-post">Comment</label>
+            <input type="text" id="comment-post">
+            <textarea id="comment" name="comment"></textarea>
+        </div>
+        <button type="submit" class="button is-info">Submit</button>
+    </form>
+</div>
+</div>
+</div>
+
+<script src="/js/comment.js"></script>
+{{#if own}}
